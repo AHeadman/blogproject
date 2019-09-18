@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content_title %}The Homepage{% endblock %}
+{% block content %}
+    <p>Your name is {{ name|default('<unknown>', True) }}.</p>
+{% endblock %}
